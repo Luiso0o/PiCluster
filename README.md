@@ -1,5 +1,8 @@
 # How to install Kubernetes from scratch using Raspberry Pi and ClusterHAT
 
+<img src="img/clusterhat.png" width="720">
+
+
 I've installed from https://clusterctrl.com/
 
 

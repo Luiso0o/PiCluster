@@ -102,3 +102,5 @@ Alternatively, you can leave the cluster from a leaf node by running:
 * [https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi#1-overview](https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi#1-overview)
 
 * [https://clusterhat.com/](https://clusterhat.com/)
+
+* [https://www.cnx-software.com/2021/12/09/raspberry-pi-zero-2-w-power-consumption/] (https://www.cnx-software.com/2021/12/09/raspberry-pi-zero-2-w-power-consumption/)

@@ -59,3 +59,40 @@ You can easily enable Kubernetes add-ons, eg. to enable “kubedns”: `microk8s
 To get the status of the cluster: `microk8s.kubectl cluster-info`
 
 MicroK8s is easy to use and comes with plenty of [Kubernetes add-ons](https://microk8s.io/docs/addons) you can enable or disable.
+
+## Master node and leaf nodes
+Now that you have MicroK8s installed on all boards, pick one is to be the master node of your cluster.
+
+On the chosen one, run the following command:
+
+`sudo microk8s.add-node`
+
+This command will generate a connection string in the form of `<master_ip>:<port>/<token>`.
+
+Adding a node
+Now, you need to run the join command from another Pi you want to add to the cluster:
+
+`microk8s.join <master_ip>:<port>/<token>`
+
+For example:
+
+`microk8s.join 172.19.181.254:25000/JHpbBYMIevZSAMnmjMHmFwanrOYCWZLu`
+
+You should be able to see the new node in a few seconds on the master with the following command:
+
+`microk8s.kubectl get node`
+
+For each new node, you need to run the microk8s.add-node command on the master, copy the output, then run microk8s.join <master node output> on the leaf.
+
+### Removing nodes
+
+
+To remove a node, run the following command on the master:
+
+`sudo microk8s remove-node <node name>`
+
+The name of nodes are available on the master by running the `microk8s.kubectl get node` command.
+
+Alternatively, you can leave the cluster from a leaf node by running:
+
+`sudo microk8s.leave`

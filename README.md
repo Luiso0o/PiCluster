@@ -96,3 +96,9 @@ The name of nodes are available on the master by running the `microk8s.kubectl g
 Alternatively, you can leave the cluster from a leaf node by running:
 
 `sudo microk8s.leave`
+
+
+# Some urls I've getted info:
+* [https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi#1-overview](https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi#1-overview)
+
+* [https://clusterhat.com/](https://clusterhat.com/)

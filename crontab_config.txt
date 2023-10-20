@@ -1,1 +1,2 @@
 @reboot sleep 30 && /usr/sbin/clusterctrl on
+@reboot sleep 30 && /usr/bin/tvservice -o

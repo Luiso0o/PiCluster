@@ -1,6 +1,6 @@
-#Power Consumption
+# Power Consumption
 
-##Disable HDMI
+## Disable HDMI
 
 If you're using the Pi without a monitor, you can simple turn off HDMI output like so:
 

@@ -31,16 +31,15 @@ And add the following options:
 
 `cgroup_enable=memory cgroup_memory=1`
 
-Now save the file in your editor and reboot:
-
-`sudo reboot`
-
 Now we install snapd
 
 `sudo apt install snapd`
 
-Once that’s done we can now Install the MicroK8s snap:
+Now save the file in your editor and reboot:
 
+`sudo reboot`
+
+Once that’s done we can now Install the MicroK8s snap:
 
 `sudo snap install microk8s --classic`
 
@@ -50,6 +49,9 @@ Channels are made up of a track (or series) and an expected level of stability, 
 
 ## Discovering MicroK8s
 Before going further here is a quick intro to the MicroK8s command line:
+
+These commands I need to do before the command:
+`su -`
 
 The start command will start all enabled Kubernetes services: `microk8s.start`
 
@@ -74,6 +76,8 @@ This command will generate a connection string in the form of `<master_ip>:<port
 
 Adding a node
 Now, you need to run the join command from another Pi you want to add to the cluster:
+
+I added the option `--worker` at the end of the command:
 
 `microk8s.join <master_ip>:<port>/<token>`
 

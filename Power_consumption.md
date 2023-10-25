@@ -46,6 +46,6 @@ In the raspberry 4:
 
 In the file /boot/config.txt
 
-We modify: `dtoverlay=vc4-kms-v3d` to dtoverlay=vc4-fkms-v3d
+We modify: `dtoverlay=vc4-kms-v3d` to `dtoverlay=vc4-fkms-v3d`
 
 then we reboot

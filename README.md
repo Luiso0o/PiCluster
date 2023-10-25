@@ -1,7 +1,6 @@
 # How to install Kubernetes from scratch using Raspberry Pi and ClusterHAT
 
-<img src="img/clusterhat.png" width="720">
-
+<img src="/img/clusterhat.png" width="720">
 
 I've installed from https://clusterctrl.com/
 
@@ -35,6 +34,10 @@ And add the following options:
 Now save the file in your editor and reboot:
 
 `sudo reboot`
+
+Now we install snapd
+
+`sudo apt install snapd`
 
 Once that’s done we can now Install the MicroK8s snap:
 
@@ -97,10 +100,8 @@ Alternatively, you can leave the cluster from a leaf node by running:
 
 `sudo microk8s.leave`
 
-
 # Some urls I've getted info:
 * [https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi#1-overview](https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi#1-overview)
 
 * [https://clusterhat.com/](https://clusterhat.com/)
-
 * [https://www.cnx-software.com/2021/12/09/raspberry-pi-zero-2-w-power-consumption/](https://www.cnx-software.com/2021/12/09/raspberry-pi-zero-2-w-power-consumption/)

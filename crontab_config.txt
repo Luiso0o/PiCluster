@@ -1,2 +1,3 @@
 @reboot sleep 30 && /usr/sbin/clusterctrl on
 @reboot sleep 30 && /usr/bin/tvservice --off
+@reboot sleep 30 && /usr/sbin/clusterhat fan on
